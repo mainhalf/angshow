@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;700&family=Ma+Shan+Zheng&family=Zhi+Mang+Xing&family=ZCOOL+QingKe+HuangYou&family=ZCOOL+XiaoWei&family=ZCOOL+KuaiLe&family=Long+Cang&family=Liu+Jian+Mao+Cao&display=swap');
+
+@theme {
+  --font-sans: "Inter", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-cursive: "Ma Shan Zheng", cursive;
+  --font-brush: "Zhi+Mang+Xing", cursive;
+  --font-huangyou: "ZCOOL QingKe HuangYou", cursive;
+  --font-xiaowei: "ZCOOL XiaoWei", serif;
+  --font-kuaile: "ZCOOL KuaiLe", cursive;
+  --font-longcang: "Long Cang", cursive;
+  --font-liujian: "Liu Jian Mao Cao", cursive;
+}
+
+body {
+  @apply bg-[#f5f5f5] text-zinc-900 antialiased overflow-hidden select-none touch-none;
+}
+
+/* Allow selection in textboxes if needed, but generally disable for UI */
+input, textarea {
+  @apply select-text touch-auto;
+}
+
+.canvas-container {
+  @apply mx-auto shadow-2xl rounded-lg overflow-hidden bg-white;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

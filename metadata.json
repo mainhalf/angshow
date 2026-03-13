@@ -1,0 +1,5 @@
+{
+  "name": "angshow",
+  "description": "A professional photo editor with Leica/Hasselblad filters, customizable text overlays, and GIF animation creation.",
+  "requestFramePermissions": []
+}
